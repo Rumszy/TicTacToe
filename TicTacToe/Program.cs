@@ -120,14 +120,56 @@ namespace TicTacToe
         public static void UpdateTable()
         {
             Console.WriteLine("     |     |     ");
-            Console.WriteLine($"  {matrix[0, 0]}  |  {matrix[0, 1]}  |  {matrix[0, 2]}  ");
+            Console.Write("  ");
+            if (matrix[0, 0].Equals("O")) Console.ForegroundColor = ConsoleColor.Blue;
+            if (matrix[0, 0].Equals("X")) Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write($"{matrix[0, 0]}");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write("  |  ");
+            if (matrix[0, 1].Equals("O")) Console.ForegroundColor = ConsoleColor.Blue;
+            if (matrix[0, 1].Equals("X")) Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write($"{matrix[0, 1]}");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write("  |  ");
+            if (matrix[0, 2].Equals("O")) Console.ForegroundColor = ConsoleColor.Blue;
+            if (matrix[0, 2].Equals("X")) Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine($"{matrix[0, 2]}");
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("_____|_____|_____");
             Console.WriteLine("     |     |     ");
-            Console.WriteLine($"  {matrix[1, 0]}  |  {matrix[1, 1]}  |  {matrix[1, 2]}  ");
+            Console.Write("  ");
+            if (matrix[1, 0].Equals("O")) Console.ForegroundColor = ConsoleColor.Blue;
+            if (matrix[1, 0].Equals("X")) Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write($"{matrix[1, 0]}");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write("  |  ");
+            if (matrix[1, 1].Equals("O")) Console.ForegroundColor = ConsoleColor.Blue;
+            if (matrix[1, 1].Equals("X")) Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write($"{matrix[1, 1]}");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write("  |  ");
+            if (matrix[1, 2].Equals("O")) Console.ForegroundColor = ConsoleColor.Blue;
+            if (matrix[1, 2].Equals("X")) Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine($"{matrix[1, 2]}");
+            Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("_____|_____|_____");
             Console.WriteLine("     |     |     ");
-            Console.WriteLine($"  {matrix[2, 0]}  |  {matrix[2, 1]}  |  {matrix[2, 2]}  ");
-            Console.WriteLine("     |     |     ");   
+            Console.Write("  ");
+            if (matrix[2, 0].Equals("O")) Console.ForegroundColor = ConsoleColor.Blue;
+            if (matrix[2, 0].Equals("X")) Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write($"{matrix[2, 0]}");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write("  |  ");
+            if (matrix[2, 1].Equals("O")) Console.ForegroundColor = ConsoleColor.Blue;
+            if (matrix[2, 1].Equals("X")) Console.ForegroundColor = ConsoleColor.Red;
+            Console.Write($"{matrix[2, 1]}");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.Write("  |  ");
+            if (matrix[2, 2].Equals("O")) Console.ForegroundColor = ConsoleColor.Blue;
+            if (matrix[2, 2].Equals("X")) Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine($"{matrix[2, 2]}");
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("     |     |     ");
         }
         /// <summary>
         /// Controls the turns and updates the matrix.
